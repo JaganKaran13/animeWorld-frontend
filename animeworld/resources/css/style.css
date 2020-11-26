@@ -102,10 +102,22 @@ margin-left: 15%;
     margin-bottom: 15px;
 }
 
+.icon-small {   
+    font-size: 120% !important;
+    width: 30px;
+    display: inline-block;
+    color: #e67e22;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    
+}
 
 /*-----BUTTONS------*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -115,7 +127,8 @@ margin-left: 15%;
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit]  {
     background-color: #e67e22;
     border: 1px solid #e67e22   ;
     color: #fff;
@@ -129,12 +142,14 @@ margin-left: 15%;
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]  {
     background-color: #cf6d17;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit]  {
     border: 1px solid #cf6d17;
 }
 
@@ -237,4 +252,214 @@ header {
 
 .popular-anime {
     padding: 0%;
+}
+
+/*----------------------------------------------*/
+/*WHAT_IS_ANIME SECTION*/
+/*----------------------------------------------*/
+
+.section-whatisanime {
+    background-color: #f4f4f4;
+}
+
+.whatisanime-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.whatisanime-box:last-child {
+    padding-left: 3%;
+    margin-top: 55px;
+}
+
+.whatisanime-screen {
+    width: 40%;
+}
+
+.anime-detail {
+    margin-bottom: 50px;
+}
+
+.anime-detail div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    margin-right: 25px;
+    font-size: 150%;
+}
+
+.clearfix {zoom: 1;}
+.clearfix::after {
+    content: ".";
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*----------------------------------------------*/
+/*WHAT_IS_ANIME SECTION*/
+/*----------------------------------------------*/
+.genre-image {
+    height: 200px;
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 15px;
+}
+
+.genre-feature {
+    margin-bottom: 5px; 
+    padding: 5px;  
+}
+
+/*----------------------------------------------*/
+/*SECTION PLANS*/
+/*----------------------------------------------*/
+.section-plans {
+    background-color: #dadada;
+}
+
+.plan-box {
+    background-color: #fff;
+    border: 5px;
+    width: 90%;
+    margin-left: 5%;   
+    box-shadow: 0 2px 2px #cccccc; 
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #ececec;
+}
+
+.plan-price {
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+.plan-price-month {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px;
+}
+
+.plan-box div:first-child {
+    background-color: #f3f1f1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.plan-box div:last-child {
+    text-align: center;
+    border: none;
+}
+
+/*----------------------------------------------*/
+/*CONTACT FORM*/
+/*----------------------------------------------*/
+.contact-form {
+    width: 60%;
+    margin: 0 20% ;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*----------------------------------------------*/
+/*FOOTER*/
+/*----------------------------------------------*/
+footer {
+    background-color: #222 ;
+    padding: 16px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.footer-nav li,
+.social-icons li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 125%;
+}
+.social-icons ul {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li:last-child,
+.social-icons li:last-child {
+    margin-right: 0;
+} 
+
+.footer-nav li a:visited,
+.footer-nav li a:link,
+.social-icons li a:visited,
+.social-icons li a:link {
+    text-decoration: none;
+    border: 0;
+    color: #666;
+    transition: color 0.2s;
+}
+
+.footer-nav ul li a:hover,
+.footer-nav ul li a:active,
+.social-icons ul li a:hover,
+.social-icons ul li a:active {
+    color: #fff
+}
+
+footer p {
+    text-align: center;
+    color: #ccc;
+    margin-top: 10px;
+    font-size: 90%;
+}
+
+.facebook-icon:hover {
+    color: #3b5999;    
+}
+
+.instagram-icon:hover {
+    color: #e4405f;
 }
