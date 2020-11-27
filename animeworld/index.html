@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anime world is a webpage to bring all the anime lovers to one place.">
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
         rel="stylesheet">
@@ -11,6 +14,16 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
+    <link rel="manifest" href="resources/icons/site.webmanifest">
+    <link rel="mask-icon" href="resources/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="resources/icons/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
     <title>AnimeWorld </title>
 </head>
 
@@ -19,22 +32,24 @@
         <nav>
             <div class="row">
                 <img src="resources/img/logo.png" alt="AnimeWorld Logo" class="logo">
+                <img src="resources/img/logo.png" alt="AnimeWorld Logo" class="logo2">
                 <ul class="main-nav">
-                    <li><a href="#">Popular Anime</a></li>
-                    <li><a href="#">What is Anime</a></li>
-                    <li><a href="#">Genres</a></li>
-                    <li><a href="#">SignUp</a></li>
+                    <li><a href="#features">Popular Anime</a></li>
+                    <li><a href="#whatisanime">What is Anime</a></li>
+                    <li><a href="#genre">Genres</a></li>
+                    <li><a href="#signup">SignUp</a></li>
                 </ul>
+                <a class="mobile-nav"><ion-icon name="menu-sharp" class="menu"></ion-icon></a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Leave the Reality.<br> Here comes the Anime World.</h1>
-            <a class="btn btn-full" href="#">Leave the Reality</a>
-            <a class="btn btn-ghost" href="#">Learn about Anime World</a>
+            <a class="btn btn-full js--scroll-to-plan" href="#">Leave the Reality</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Learn about Anime World</a>
         </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Welcome to the World of A&#8469;ime &#9829;</h2>
             <p class="long-copy">Kon'nichiwa!!! We are AnimeWorld, Lets explore the world
@@ -81,54 +96,54 @@
         <ul class="anime-showcase clearfix">
             <li>
                 <figure class="anime-photo">
-                    <img src="resources/img/Posters/naruto.jpg" , alt="">
+                    <img src="resources/img/Posters/naruto.jpg" alt="naruto">
                 </figure>
             </li>
 
             <li>
                 <figure class="anime-photo">
-                    <img src="resources/img/Posters/deathnote.jpg" , alt="">
+                    <img src="resources/img/Posters/deathnote.jpg" alt="deathnote">
                 </figure>
             </li>
 
             <li>
                 <figure class="anime-photo">
-                    <img src="resources/img/Posters/fairytail.jpg" , alt="">
+                    <img src="resources/img/Posters/fairytail.jpg" alt="fairytail">
                 </figure>
             </li>
 
             <li>
                 <figure class="anime-photo">
-                    <img src="resources/img/Posters/foodwars.jpg" , alt="">
+                    <img src="resources/img/Posters/foodwars.jpg" alt="foodwar">
                 </figure>
             </li>
         </ul>
         <ul class="anime-showcase clearfix">
             <li>
                 <figure class="anime-photo">
-                    <img src="resources/img/Posters/fullmetalalchamist.jpg" , alt="">
+                    <img src="resources/img/Posters/fullmetalalchamist.jpg" alt="fma">
                 </figure>
             </li>
 
             <li>
                 <figure class="anime-photo">
-                    <img src="resources/img/Posters/haikuu.jpg" , alt="">
+                    <img src="resources/img/Posters/haikuu.jpg" alt="haikyuu">
                 </figure>
             </li>
             <li>
                 <figure class="anime-photo">
-                    <img src="resources/img/Posters/codegeass.jpg" , alt="">
+                    <img src="resources/img/Posters/codegeass.jpg" alt="codegeass">
                 </figure>
             </li>
             <li>
                 <figure class="anime-photo">
-                    <img src="resources/img/Posters/sevendeadlysins.jpg" , alt="">
+                    <img src="resources/img/Posters/sevendeadlysins.jpg" alt="sevensins">
                 </figure>
             </li>
         </ul>
     </section>
 
-    <section class="section-whatisanime">
+    <section class="section-whatisanime" id="whatisanime">
         <div class="row">
             <h2>What is an Anime?</h2>
         </div>
@@ -153,13 +168,13 @@
         </div>
     </section>
 
-    <section class="section-genre">
+    <section class="section-genre" id="genre">
         <div class="row">
             <h2>Popular Genres</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-4">
-                <img src="resources/img/genre/action.jpg" alt="action-genre"" class=" genre-image">
+                <img src="resources/img/genre/action.jpg" alt="action-genre" class=" genre-image">
                 <h3>Action</h3>
                 <div class=genre-features>
                     <ion-icon name="person" class="icon-small"></ion-icon>
@@ -209,7 +224,7 @@
         </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="signup">
         <div class="row">
             <h2>Subscription and Pricing Plan</h2>
         </div>
@@ -276,7 +291,7 @@
                     <div>
                         <h3>Starter</h3>
                         <p class="plan-price">$199<span>/ month</span></p>
-                        <p class="plan-price-month">&nbsp</p>
+                        <p class="plan-price-month">&nbsp;</p>
                     </div>
                     <div>
                         <ul>
@@ -342,7 +357,7 @@
                         <label for="news">News Letter?</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="checkbox" name="news" id="new" checked>Yes, Please
+                        <input type="checkbox" name="news" id="news" checked>Yes, Please
                     </div>
                 </div>
                 <div class="row">
@@ -386,7 +401,11 @@
            <p>Copyright &copy; 2020 By Lelouch. All rights reserved.</p> 
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="resources/js/script.js"></script>
 
 </body>
 
